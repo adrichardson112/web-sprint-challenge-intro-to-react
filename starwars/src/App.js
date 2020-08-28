@@ -28,6 +28,20 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <div className="characters">
+        {characters.map(char => {
+          return (
+            <Character
+              name= {char.name}
+              status= {char.status}
+              species= {char.species}
+              gender= {char.gender}
+              origin= {char.origin.name}
+              image= {char.image}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
