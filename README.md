@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a developer friendly framework that allows us to build our apps and style the page all in one. A problem that it solves is being simple. React handles the framework and the interface, while the developer styles it. React JS is also component based, meaning we can declare components that can be used over and over. Lastly, React JS is more usable for large applications whose data is constantly changing (think instagram). 
+
 1. Describe component state.
+
+State is an object that determines how a component will behave. We can create components that are interactive using state. In other words, we can define properties that determine how our app will behave. 
 
 1. Describe props.
 
+Props allow us to send data to other components within react. We can literally pass our "data" between components, allowing them to talk to one another. Props are passed from the parent to child and shouldn't be changed. 
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects can include data fetching from an API, setting up a subscription, or manually changing the DOM in react. We can sync effects in a React component by using useEffect and setting the state inside it. Whenever our props change, it will set as the state inside our useEffect call. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

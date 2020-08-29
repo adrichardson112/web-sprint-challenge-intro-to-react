@@ -1,7 +1,7 @@
 // Write your Character component here
 import React from "react";
-import styled from 'styled-components'
-import {Card, Col, CardText, CardTitle, CardImg} from 'reactstrap'
+// import styled from 'styled-components'
+import {Card, Col, CardText, CardTitle, CardImg, Spinner} from 'reactstrap'
 
 const Character = (props) => {
     return (
@@ -13,6 +13,7 @@ const Character = (props) => {
                 <CardText><b>Planet:</b> {props.origin}</CardText>
                 <CardText><b>Species:</b> {props.species}</CardText>
                 <CardText><b>Gender:</b> {props.gender}</CardText>
+                <Spinner type='grow' color='success' />
             </Card>
         </Col>
     )}
