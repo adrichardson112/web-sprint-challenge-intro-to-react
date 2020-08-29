@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import {Row} from 'reactstrap'
 import './App.css';
 import axios from 'axios'
-import styled from 'styled-components'
 import Character from './components/Character';
 
 const App = () => {
@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <div className="characters">
+      <h1 className="display-3" className="text-center">Characters</h1>
+      <Row>
         {characters.map(char => {
           return (
             <Character
@@ -41,7 +41,7 @@ const App = () => {
             />
           );
         })}
-      </div>
+      </Row>
     </div>
   );
 }
