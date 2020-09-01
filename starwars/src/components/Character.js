@@ -1,21 +1,18 @@
 // Write your Character component here
 import React from "react";
 // import styled from 'styled-components'
-import {Card, Col, CardText, CardTitle, CardImg, Spinner} from 'reactstrap'
 
 const Character = (props) => {
     return (
-        <Col sm="3">
-            <Card outline color='info' style={{padding: '3%', margin: '4%', backgroundColor: '#687'}}>
-                <CardImg src={props.image} />
-                <CardTitle><b>Name:</b>{props.name}</CardTitle>
-                <CardText><b>Status:</b> {props.status}</CardText>
-                <CardText><b>Planet:</b> {props.origin}</CardText>
-                <CardText><b>Species:</b> {props.species}</CardText>
-                <CardText><b>Gender:</b> {props.gender}</CardText>
-                <Spinner type='grow' color='success' />
-            </Card>
-        </Col>
-    )}
+      <div>
+        <img src= {props.image}/>
+        <h1>Name: {props.name}</h1>
+         <p>Status: {props.status}</p>
+         <p>Planet: {props.planet}</p>
+         <p>Species: {props.species}</p>
+         <p>Gender: {props.gender}</p>
+       </div>
+    );
+ };
 
 export default Character;

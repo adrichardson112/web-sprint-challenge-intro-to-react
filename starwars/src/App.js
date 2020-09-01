@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {Row} from 'reactstrap'
 import './App.css';
 import axios from 'axios'
 import Character from './components/Character';
@@ -27,8 +26,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="display-3" className="text-center">Characters</h1>
-      <Row>
+      <h1 className="header">Characters</h1>
         {characters.map(char => {
           return (
             <Character
@@ -41,7 +39,6 @@ const App = () => {
             />
           );
         })}
-      </Row>
     </div>
   );
 }
